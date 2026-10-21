@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="lucas.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Meu Site em HTML Puro</title>
+</head>
+<body>
+
+  <header id="topo">
+    <h1>Meu Site em HTML Puro</h1>
+    <p>Feito apenas com HTML: sem CSS e sem JavaScript.</p>
+
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+
+    <section id="inicio">
+      <h2>Início</h2>
+      <p>Bem-vindo! Este site mostra que é possível criar uma página com menu de navegação usando somente as tags nativas do HTML.</p>
+      <p>Use o menu acima para ir até cada seção da página.</p>
+      <p><a href="#topo">Voltar ao topo</a></p>
+    </section>
+
+    <hr>
+
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>O HTML sozinho já oferece:</p>
+      <ul>
+        <li><strong>Links internos</strong> para navegar entre seções;</li>
+        <li><strong>Listas</strong>, <strong>tabelas</strong> e <strong>formulários</strong>;</li>
+        <li><strong>Menus sanfonados</strong> com a tag details.</li>
+      </ul>
+
+      <details>
+        <summary>Clique para saber mais</summary>
+        <p>A tag details cria um bloco que abre e fecha ao clique, sem precisar de JavaScript.</p>
+      </details>
+      <p><a href="#topo">Voltar ao topo</a></p>
+    </section>
+
+    <hr>
+
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <table border="1" cellpadding="8">
+        <thead>
+          <tr>
+            <th>Serviço</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Site simples</td>
+            <td>Uma página com as informações essenciais</td>
+            <td>R$ 500</td>
+          </tr>
+          <tr>
+            <td>Site institucional</td>
+            <td>Várias páginas com menu e formulário</td>
+            <td>R$ 1.200</td>
+          </tr>
+          <tr>
+            <td>Manutenção</td>
+            <td>Atualizações e ajustes mensais</td>
+            <td>R$ 150/mês</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><a href="#topo">Voltar ao topo</a></p>
+    </section>
+
+    <hr>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form action="mailto:contato@exemplo.com" method="post" enctype="text/plain">
+        <p>
+          <label for="nome">Nome:</label><br>
+          <input type="text" id="nome" name="nome" required>
+        </p>
+        <p>
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="mensagem">Mensagem:</label><br>
+          <textarea id="mensagem" name="mensagem" rows="5" cols="30" required></textarea>
+        </p>
+        <p><button type="submit">Enviar</button></p>
+      </form>
+      <p><a href="#topo">Voltar ao topo</a></p>
+    </section>
+
+  </main>
+
+  <hr>
+  <footer>
+    <p>© 2026 Meu Site. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
